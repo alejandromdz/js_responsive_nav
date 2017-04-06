@@ -1,0 +1,46 @@
+*{
+    margin:0;
+}
+#main{
+    width: 100%;
+}
+#main ul{
+    list-style: none;
+    display:flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding:0;
+}
+#main li{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    background: #234;
+    font-family: arial;
+    color: white;
+    padding: 10px;
+    margin: 2px;
+    cursor: default;
+
+
+}
+#main li#form{
+    display:none;
+}
+#main li#form.active
+{
+    display:flex;
+}
+#main li#signup{
+    opacity:1;
+    transition: opacity 1s;
+}
+#main li#signup.faded
+{
+    opacity: 0;
+}
+#main li:hover
+{
+   box-shadow:  0px 0px 20px 1px rgba(3, 169, 244, 0.5);
+}
